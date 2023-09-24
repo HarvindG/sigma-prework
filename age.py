@@ -8,7 +8,8 @@ birthdate = datetime(year, month, day)
 
 current_date = datetime.now()
 
-age = current_date.year - birthdate.year - ((current_date.month, current_date.day) < (birthdate.month, birthdate.day))
+age = current_date.year - birthdate.year - \
+    ((current_date.month, current_date.day) < (birthdate.month, birthdate.day))
 
 
 print('You are now ' + str(age) + ' year old')
